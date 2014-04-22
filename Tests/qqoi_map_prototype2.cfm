@@ -91,7 +91,20 @@
 			  tiled: false,
 			  type: 'ArcGisServerRest',
 			  url: 'http://irmaservices.nps.gov/arcgis/rest/services/NPSData/NPS_Boundaries_WebMercator_labelfree/MapServer'
-			}
+		},
+		{
+			identify: {
+				content: '{{NETWORK_NA}}',
+				simpleTree: true,
+				title: '{{NETWORK_NA}}'
+			  },
+			  layers: 'all',
+			  name: 'Inventory and Monitoring Networks',
+			  opacity: 0.7,
+			  tiled: false,
+			  type: 'ArcGisServerRest',
+			  url: 'http://irmaservices.nps.gov/arcgis/rest/services/NPSData/Networks/MapServer'
+		}
 		]
       };
 	   
