@@ -114,7 +114,7 @@
 			  name: 'National Park Quarter Quads of Interest',
 			  opacity: 0.7,
 			  tiled: false,
-			  type: 'ArcGisServerRest',
+			  type: 'arcgisserver',
 			  url: 'http://irmaservices.nps.gov/arcgis/rest/services/NPSData/QuarterQuads/MapServer'
         },
 		{
@@ -127,7 +127,7 @@
 			  name: 'Nationwide Quarter Quads',
 			  opacity: 0.4,
 			  tiled: false,
-			  type: 'ArcGisServerRest',
+			  type: 'arcgisserver',
 			  url: 'http://irmaservices.nps.gov/arcgis/rest/services/NPSData/QuarterQuads_FullExtent/MapServer'
         },
 		{
@@ -140,8 +140,8 @@
 			  name: 'National Parks',
 			  opacity: 0.7,
 			  tiled: false,
-			  type: 'ArcGisServerRest',
-			  url: 'http://irmaservices.nps.gov/arcgis/rest/services/NPSData/NPS_Boundaries_WebMercator_labelfree/MapServer'
+			  type: 'arcgisserver',
+			  url: 'http://irmaservices.nps.gov/arcgis/rest/services/NPSData/IMD_Boundaries_WebMercator/MapServer'
 		},
 		{
 			identify: {
@@ -153,7 +153,7 @@
 			  name: 'Inventory and Monitoring Networks',
 			  opacity: 0.7,
 			  tiled: false,
-			  type: 'ArcGisServerRest',
+			  type: 'arcgisserver',
 			  url: 'http://irmaservices.nps.gov/arcgis/rest/services/NPSData/NPS_MonitoringNetworks/MapServer'
 		}
 		]
