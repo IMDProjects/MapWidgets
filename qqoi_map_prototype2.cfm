@@ -14,7 +14,8 @@
     <!--- OPTIONAL ADD custom stylesheets below this point--->
 
 	<!--- LEAVE the generic JQuery script alone --->
-	<script type="text/javascript" src="/im/assets/scripts/JQuery/jquery-1.4.4.min.js"></script> 
+	<script type="text/javascript" src="/im/assets/scripts/JQuery/jquery-1.9.1.min.js"></script> 
+    <cfinclude template="/im/assets/includes/imBrowserForDropDownMenus.cfm" />
 	<!--- OPTIONAL ADD other scripts below this point  --->
 	
         
@@ -88,7 +89,7 @@
 					<option value="-149.023392874452,62.6140125870353,52.0111522971165,-175.052686585908">Southwest Alaska Network</option>
 					<option value="-111.522770077718,49.0008888024695,38.6102196608008,-120.934284544668">Upper Columbia Basin Network</option>
 				</select>
-				<p><br/><a href="mailto:mike_story@nps.gov">Email Quad Request</a></p>
+				<p><br/><a href="mailto:irma@nps.gov">Email Quad Request</a></p>
 			</div>
 			<div id="example-map" style="height:500px;position:absolute;width:500px;">
 			</div>
@@ -114,7 +115,7 @@
 			  opacity: 0.7,
 			  tiled: false,
 			  type: 'ArcGisServerRest',
-			  url: 'http://irmaservices.nps.gov/arcgis/rest/services/NPSData/Quarter_Quads/MapServer'
+			  url: 'http://irmaservices.nps.gov/arcgis/rest/services/NPSData/QuarterQuads/MapServer'
         },
 		{
           identify: {
@@ -144,23 +145,23 @@
 		},
 		{
 			identify: {
-				content: '{{NETWORK_NA}}',
+				content: '{{NetworkName}}',
 				simpleTree: true,
-				title: '{{NETWORK_NA}}'
+				title: '{{NetworkName}}'
 			  },
 			  layers: 'all',
 			  name: 'Inventory and Monitoring Networks',
 			  opacity: 0.7,
 			  tiled: false,
 			  type: 'ArcGisServerRest',
-			  url: 'http://irmaservices.nps.gov/arcgis/rest/services/NPSData/Networks/MapServer'
+			  url: 'http://irmaservices.nps.gov/arcgis/rest/services/NPSData/NPS_MonitoringNetworks/MapServer'
 		}
 		]
       };
 	   
       (function() {
         var s = document.createElement('script');
-        s.src = 'http://www.nps.gov/npmap/1.0.0/bootstrap.js';
+        s.src = 'http://www.nps.gov/lib/npmap.js/3.0.14/npmap-bootstrap.js';
         document.body.appendChild(s);
       })();
 	  
